@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=APIKEY"; // https://aistudio.google.com/app/apikey
+
+        // 사용자 입력을 받는 함수
+        function getUserInput() {
+        const userInput = {
+                    "contents": [{
+                    "parts":[{
+                    "text": document.getElementById("userInput").value}]}]
+            };
+        return userInput;
+        }
+
+        // REST API 요청을 보내는 함수
+        async function sendRequest(userInput) {
+        const response = await fetch(API_URL, {
+            method: "POST",
+            headers: {
+            "Content-Type": "application/json",
+            },
+            body: JSON.stringify(userInput),
+        });
+        const responseData = await response.json();
+        return responseData;
+        }
+
+        // 응답을 웹사이트에 표시하는 함수
+        function displayResponse(responseData) {
+            const responseElement = document.getElementById("response");
+            responseElement.textContent = responseData.candidates[0].content.parts[0].text;
+        }
+
+        // 사용자가 버튼을 클릭하면 함수 호출
+        window.onload = () => {
+        document.getElementById("submitButton").addEventListener("click", async () => {
+        const userInput = getUserInput();
+        const responseData = await sendRequest(userInput);
+        displayResponse(responseData);
+        });
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="userInput"> <button id="submitButton">입력</button>
+    <div id="response"></div>
+</body>
+</html>
