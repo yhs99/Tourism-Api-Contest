@@ -45,15 +45,7 @@ function changeLang() {
     localStorage.setItem("language", 'en');
   }else {
     localStorage.removeItem("language");
-    localStorage.setItem("language", 'en');
+    localStorage.setItem("language", 'ko');
   }
   location.reload();
 }
-
-(() => {
-  if(localStorage.getItem("language") == 'ko') {
-    $("#changeLang").html("Enlgish");
-  }else {
-    $("#changeLang").html("한국어");
-  }
-})
