@@ -49,3 +49,11 @@ function changeLang() {
   }
   location.reload();
 }
+
+(() => {
+  if(localStorage.getItem("language") == 'ko') {
+    $("#changeLang").html("Enlgish");
+  }else {
+    $("#changeLang").html("한국어");
+  }
+})
