@@ -7,6 +7,8 @@
   <title>대한민국 구석구석 관광정보 | VISITKorea</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./language.js" refer></script>
 
   <!-- Favicons -->
   <link href="assets/images/favicon.ico" rel="icon">
@@ -46,7 +48,7 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="./">English</a></li>
+          <li><a href="#" onclick="changeLang()">English</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -68,28 +70,28 @@
           <div class="col-lg-3 col-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="276020" data-purecounter-duration="2" class="purecounter">276,020</span>
-              <p class="stats-item-multilang-tour">다국어 관광정보</p>
+              <p id="stats-item-multilang-tour" class="stats-item-multilang-tour"></p>
             </div>
           </div>
 
           <div class="col-lg-3 col-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="2" class="purecounter">521</span>
-              <p>두루누비 정보 서비스</p>
+              <p id="durunubi"></p>
             </div>
           </div>
 
           <div class="col-lg-3 col-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="63317" data-purecounter-duration="1.5" class="purecounter">63317</span>
-              <p>고캠핑정보</p>
+              <p id="gocamping-Info"></p>
             </div>
           </div>
 
           <div class="col-lg-3 col-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="59445" data-purecounter-duration="1.5" class="purecounter">59445</span>
-              <p>무장애 관광 정보</p>
+              <p id="non-obstacle-tour-info"></p>
             </div>
           </div>
         </div>
@@ -98,31 +100,31 @@
           <div class="col-lg-3 col-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="360" data-purecounter-duration="1.5" class="purecounter">360</span>
-              <p>생태 관광정보</p>
+              <p id="ecotour-info"></p>
             </div>
           </div>
           <div class="col-lg-3 col-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="1854" data-purecounter-duration="1.5" class="purecounter">1,854</span>
-              <p>외래객 친화 관광정보</p>
+              <p id="foreign-friendly-tour-info"></p>
             </div>
           </div>
           <div class="col-lg-3 col-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="29" data-purecounter-duration="1.5" class="purecounter">29</span>
-              <p>관광인 채용정보 서비스</p>
+              <p id="recruit-info"></p>
             </div>
           </div>
           <div class="col-lg-3 col-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="18962" data-purecounter-duration="1.5" class="purecounter">18962</span>
-              <p>관광지 오디오 가이드 정보</p>
+              <p id="tour-audio-info">관광지 오디오 가이드 정보</p>
             </div>
           </div>
         </div>
         <div class="row gy-4 d-flex justify-content-between">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h2 data-aos="fade-up"><strong>대한민국 구석구석 지역정보</strong></h2>
+            <h2 data-aos="fade-up"><strong id="main-title">대한민국 구석구석 지역정보</strong></h2>
             <p data-aos="fade-up" data-aos-delay="100" style="font-size: 16px;">국내 관광업계 활성화를 위해 다양한 사업을 추진합니다 어쩌고 저쩌고 블라블발블블블블블블블브ㅏㄹ브라브ㅏㄹ브ㅏ르바르바ㅡ라ㅡㄹ발브ㅏ</p>
 
             <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
@@ -130,6 +132,7 @@
                 <option>한국어</option>
                 <option>영어</option>
               </select>
+              
               <input type="text" class="form-control" placeholder="찾고 싶은 관광 지역 이름을 적어보세요">
               <button type="submit" class="btn btn-primary h1"><span class="h5">검&nbsp;색</span></button>
             </form>
@@ -190,8 +193,8 @@
             <a href="https://www.youtube.com/watch?v=E2CQ_1bhPK4" class="glightbox play-btn"></a>
           </div>
 
-          <div class="col-lg-6 content order-last  order-lg-first" data-aos="fade-up" data-aos-delay="100">
-            <h3>이 사이트는</h3>
+          <div id="information" class="col-lg-6 content order-last  order-lg-first" data-aos="fade-up" data-aos-delay="100">
+            <!-- <h3>이 사이트는</h3>
             <p>
               한국관광공사에서 공사가 보유한 실시간 다국어 관광정보를 비롯한 다양한 관광 관련데이터를 한국관광공사 공공데이터개방포털인 TourAPI와 행정안전부의 공공데이터포털을 통해 여러분에게 보여집니다.
             </p>
@@ -217,7 +220,7 @@
                   <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p>
                 </div>
               </li>
-            </ul>
+            </ul> -->
           </div>
 
         </div>
@@ -231,8 +234,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <span>글자뒤 그림자<br></span>
-        <h2>대충 이런 카테고리들이있음</h2>
+        <span id="behind-shadow">글자뒤 그림자<br></span>
+        <h2 id="catergory-title">대충 이런 카테고리들이있음</h2>
         <p>누르면 카테고리별 상세 검색 페이지</p>
       </div><!-- End Section Title -->
 

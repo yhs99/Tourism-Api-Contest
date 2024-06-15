@@ -16,25 +16,36 @@ function setComponets(language) {
     type : "GET",
     dataType : "json",
     success: (data) => {
+      console.log(data['en'])
       datas = data[language];
-      console.log(datas);
-      console.log(Object.keys(datas))
-      Object.keys(datas).forEach((element) => {
-        console.log(element)
-        $('#'+element).html(datas[element]);
-      });
+      for(let key in datas) {
+        let keys = Object.keys(datas[key]);
+        $("#"+keys).html(datas[key][keys]);
+      }
     },
     error : (request, stats, error) => {
-      document.body.innerHTML = `
-      <h1>${stats}, ${error}, ${request}</h1>
-      언어설정 로딩중 오류가 발생했습니다 잠시후 다시 시도해주세요
-      `
+      if(localStorage.getItem("language") == "ko") {
+        document.body.innerHTML = `
+        <h1>${stats}, ${error}, ${request}</h1>
+        <span id="errorMessage">언어 정보 로딩중 에러가 발생했습니다. 나중에 다시 시도해주세요</span>
+        `
+      }else {
+        document.body.innerHTML = `
+        <h1>${stats}, ${error}, ${request}</h1>
+        <span id="errorMessage">Error loading language information. Please try again later</span>
+        `
+      }
     }
   });
 }
 
-function changeLang(language) {
-  localStorage.removeItem("language");
-  localStorage.setItem("language", language);
+function changeLang() {
+  if(localStorage.getItem("language") == 'ko') {
+    localStorage.removeItem("language");
+    localStorage.setItem("language", 'en');
+  }else {
+    localStorage.removeItem("language");
+    localStorage.setItem("language", 'en');
+  }
   location.reload();
 }

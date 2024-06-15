@@ -3,20 +3,80 @@
   "ko" : [
     {
       "stats-item-multilang-tour" : "다국어 관광정보"
+    },
+    {
+      "durunubi" : "두루누비 정보 서비스"
+    },
+    {
+      "gocamping-Info" : "고캠핑정보"
+    },
+    {
+      "non-obstacle-tour-info" : "무장애 관광 정보"
+    },
+    {
+      "ecotour-info" : "생태 관광정보"
+    },
+    {
+      "foreign-friendly-tour-info" : "외래객 친화 관광정보"
+    },
+    {
+      "recruit-info" : "관광인 채용정보 서비스"
+    },
+    {
+      "tour-audio-info" : "관광지 오디오 가이드 정보"
+    },
+    {
+      "main-title" : "대한민국 구석구석 지역정보"
+    },
+    {
+      "information" : "<h3>이 사이트는</h3><p>한국관광공사에서 공사가 보유한 실시간 다국어 관광정보를 비롯한 다양한 관광 관련데이터를 한국관광공사 공공데이터개방포털인 TourAPI와 행정안전부의 공공데이터포털을 통해 여러분에게 보여집니다.</p><ul><li><i class="fa-solid fa-mountain-sun"></i>
+<div>
+<h5>다양한 관광 매력으로 새로운 여행경험을 제공합니다</h5>
+<p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p></div></li><li><i class="fa-solid fa-cable-car"></i><div><h5>민간이 주도하고 지역이 발전하는 관광산업을 제안합니다</h5><p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p></div></li><li><i class="fa-solid fa-person-hiking"></i><div><h5>여행객 맞춤형 데이터를 제공합니다</h5><p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p></div></li></ul>"
+    },
+    {
+      "behind-shadow" : "글자뒤 그림자"
+    },
+    {
+      "category-title" : "카테고리 제목들"
     }
   ],
   "en" : [
     {
-      "stats-item-multilang-tour" : "Multilingual Tourism Information"
+      "stats-item-multilang-tour" : "Multilang Tourism Info"
     },
     {
-      "test-component" : "testing"
+      "durunubi" : "Durunubi Info"
     },
     {
-      "test-component2" : "testing2"
+      "gocamping-Info" : "Go Camping Info"
     },
     {
-      "test-component3" : "testing3"
+      "non-obstacle-tour-info" : "Non Obstacle Tour"
+    },
+    {
+      "ecotour-info" : "Eco Tour Info"
+    },
+    {
+      "foreign-friendly-tour-info" : "Foreign Friendly Tour Info"
+    },
+    {
+      "recruit-info" : "Tourist Recruit Information"
+    },
+    {
+      "tour-audio-info" : "Tourist audio information"
+    },
+    {
+      "main-title" : "Korea Tourism Organization"
+    },
+    {
+      "information" : "<h3>About KTO</h3><p>Various tourism-related data, including real-time multilingual tourism information held by the Korea Tourism Organization, are shown to you through TourAPI, the public data opening portal of the Korea Tourism Organization, and the public data portal of the Ministry of Public Administration and Security.</p><ul><li><i class='fa-solid fa-mountain-sun'></i><div><h5>It offers a new travel experience with a variety of tourist attractions</h5><p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p></div></li><li><i class='fa-solid fa-cable-car'></i><div><h5>Propose a tourism industry that is led by the private sector and developed by the region</h5><p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p></div></li><li><i class='fa-solid fa-person-hiking'></i><div><h5>Provides customized data for travelers</h5><p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p></div></li></ul>"
+    },
+    {
+      "behind-shadow" : "Categories"
+    },
+    {
+      "category-title" : "Categories"
     }
   ]
 }
