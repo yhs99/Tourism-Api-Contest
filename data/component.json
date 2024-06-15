@@ -8,6 +8,15 @@
   "en" : [
     {
       "stats-item-multilang-tour" : "Multilingual Tourism Information"
+    },
+    {
+      "test-component" : "testing"
+    },
+    {
+      "test-component2" : "testing2"
+    },
+    {
+      "test-component3" : "testing3"
     }
   ]
 }
