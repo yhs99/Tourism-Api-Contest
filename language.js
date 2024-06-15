@@ -1,5 +1,4 @@
 let url = "https://yhsdev.me/data/component.json";
-
 console.log(localStorage.getItem("language"));
 if(!localStorage.getItem("language")) {
   localStorage.setItem("language", "ko");
