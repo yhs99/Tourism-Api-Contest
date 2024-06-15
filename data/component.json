@@ -29,10 +29,7 @@
       "main-title" : "대한민국 구석구석 지역정보"
     },
     {
-      "information" : "<h3>이 사이트는</h3><p>한국관광공사에서 공사가 보유한 실시간 다국어 관광정보를 비롯한 다양한 관광 관련데이터를 한국관광공사 공공데이터개방포털인 TourAPI와 행정안전부의 공공데이터포털을 통해 여러분에게 보여집니다.</p><ul><li><i class="fa-solid fa-mountain-sun"></i>
-<div>
-<h5>다양한 관광 매력으로 새로운 여행경험을 제공합니다</h5>
-<p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p></div></li><li><i class="fa-solid fa-cable-car"></i><div><h5>민간이 주도하고 지역이 발전하는 관광산업을 제안합니다</h5><p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p></div></li><li><i class="fa-solid fa-person-hiking"></i><div><h5>여행객 맞춤형 데이터를 제공합니다</h5><p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p></div></li></ul>"
+      "information" : "<h3>이 사이트는</h3><p>한국관광공사에서 공사가 보유한 실시간 다국어 관광정보를 비롯한 다양한 관광 관련데이터를 한국관광공사 공공데이터개방포털인 TourAPI와 행정안전부의 공공데이터포털을 통해 여러분에게 보여집니다.</p><ul><li><i class='fa-solid fa-mountain-sun'></i><div><h5>다양한 관광 매력으로 새로운 여행경험을 제공합니다</h5><p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p></div></li><li><i class='fa-solid fa-cable-car'></i><div><h5>민간이 주도하고 지역이 발전하는 관광산업을 제안합니다</h5><p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p></div></li><li><i class='fa-solid fa-person-hiking'></i><div><h5>여행객 맞춤형 데이터를 제공합니다</h5><p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p></div></li></ul>"
     },
     {
       "behind-shadow" : "글자뒤 그림자"
