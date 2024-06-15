@@ -36,6 +36,12 @@
     },
     {
       "category-title" : "카테고리 제목들"
+    },
+    {
+      "main-sub-title" : "국내 관광업계 활성화를 위해 다양한 사업을 추진합니다 어쩌고 저쩌고"
+    },
+    {
+      "form-search" : "<select class='form-control' style='flex-basis: 150px;'><option>한국어</option><option>영어</option></select><input type='text' class='form-control' placeholder='원하는 관광 지역을 입력해보세요'><button type='submit' class='btn btn-primary h1'><span class='h5'>검&nbsp;색</span></button>"
     }
   ],
   "en" : [
@@ -74,6 +80,12 @@
     },
     {
       "category-title" : "Categories"
+    },
+    {
+      "main-sub-title" : "We will promote various projects to revitalize the domestic tourism industry"
+    },
+    {
+      "form-search" : "<select class='form-control' style='flex-basis: 150px;'><option>Korean</option><option>English</option></select><input type='text' class='form-control' placeholder='Write tour area you want to find'><button type='submit' class='btn btn-primary h1'><span class='h5'>Search</span></button>"
     }
   ]
 }
