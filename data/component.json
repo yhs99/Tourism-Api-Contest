@@ -1,0 +1,13 @@
+{
+  "__comment__" : "다국어 사이트 지원을 위한 다국어 데이터를 저장해놓는 컴포넌트 json입니다. 모든 데이터는 html element의 class 속성과 mapping되므로 알맞게 CRUD 작업을 진행해주세요",
+  "ko" : [
+    {
+      "stats-item-multilang-tour" : "다국어 관광정보"
+    }
+  ],
+  "en" : [
+    {
+      "stats-item-multilang-tour" : "Multilingual Tourism Information"
+    }
+  ]
+}
