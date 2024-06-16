@@ -19,7 +19,11 @@ function setComponets(language) {
       datas = data[language];
       for(let key in datas) {
         let keys = Object.keys(datas[key]);
+        console.log($("#"+keys))
         $("#"+keys).html(datas[key][keys]);
+        if(keys.toString() == "input-place-holder") {
+          $("#"+keys).attr("placeholder", datas[key][keys]["search-place-holder"]);
+        }
       }
     },
     error : (request, stats, error) => {
