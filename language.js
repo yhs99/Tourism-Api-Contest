@@ -22,7 +22,7 @@ function setComponets(language) {
         console.log($("#"+keys))
         $("#"+keys).html(datas[key][keys]);
         if(keys.toString() == "input-place-holder") {
-          $("#"+keys).attr("placeholder", datas[key][keys]["search-place-holder"]);
+         $("#"+keys).attr("placeholder", datas[key][keys]);
         }
       }
     },
